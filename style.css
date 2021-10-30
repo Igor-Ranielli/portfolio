@@ -332,7 +332,7 @@ header{
 
   .card{
     width: 18rem;
-    height: 25rem;
+    height: 29rem;
     position: relative;
   }
 
@@ -347,7 +347,7 @@ header{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     transition: opacity .3s;
   }
 
@@ -358,10 +358,10 @@ header{
   .card-info{
     opacity: 0;
     visibility: hidden;
-    transition: all .3s;
+    transition: all 0.3s;
     position: absolute;
     bottom: 0;
-    padding: 0.1rem 2rem;
+    padding: 4rem 2rem;
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .4);
   }
 
@@ -375,7 +375,7 @@ header{
   .card-info h3{
     font-family: var(--font-primary);
     font-weight: bolder;
-    color: #ff4081;
+    color: #ff04d5;
     margin-bottom: 1.5rem;
     }
 
@@ -387,20 +387,22 @@ header{
       margin-bottom: 2rem;
     }
 
-    .card-info button{
-      width: 8rem;
-      height: 2.5rem;
-      background-color: rgb(177, 58, 177);
-      background: #cc2489;
-      background: -webkit-linear-gradient(to right, #960de0, #ad5389);
-      background: linear-gradient(to right, #9e0bec, #d84ca0);
+    .btn{
+      background: #7F00FF;
+      background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+      background: linear-gradient(to right, #E100FF, #7F00FF);
       font-family: var(--font-action);
       font-size: 1rem;
       color: #eee;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       border: none;
       box-shadow: 2px 3px 5px black;
       text-shadow: 2px 3px 5px black;
+    }
+
+    .card-info button{
+      width: 8rem;
+      height: 2.5rem;
     }
     
     .card-info button:hover{
@@ -413,4 +415,119 @@ header{
       bottom: 2rem;
       opacity: 1;
       visibility: visible;
+    }
+
+    .section-contact {
+      width: 100%;
+      height: 100vh;
+      background-color: #272727;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .contact-wrapper {
+      width: 60%;
+      height: 30rem;
+      display: flex;
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+    }
+    
+    .contact-left {
+      width: 35%;
+      background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+        url(images/contact.jpg);
+      background-size: cover;
+    }
+    
+    .contact-right {
+      width: 65%;
+      background-color: #eee;
+      padding: 1rem 3rem 3rem 3rem;
+    }
+    
+    .section-contact h1 {
+      width: 100%;
+      text-align: center;
+      font-family: var(--font-primary);
+      color: #272727;
+      font-size: 3rem;
+      font-weight: lighter;
+    }
+    
+    .section-contact form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .input-group {
+      position: relative;
+    }
+    
+    .field {
+      background: transparent;
+      border: none;
+      width: 20rem;
+      font-size: 1.5rem;
+      font-family: var(--font-secundary);
+      border-bottom: 2px dashed #636363;
+      height: 3rem;
+      outline: none;
+      margin: 1rem 0;
+    }
+    
+    .input-group textarea {
+      padding-top: 1rem;
+      max-width: 25rem;
+      max-height: 6rem;
+    }
+    
+    .field-label {
+      position: absolute;
+      left: 0;
+      top: 2rem;
+      font-size: 1rem;
+      font-family: var(--font-secundary);
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+    
+    .field:focus ~ label {
+      top: 0;
+      font-size: 0.7rem;
+    }
+    
+    .field:focus {
+      border-bottom: 1px solid;
+    }
+    
+    .btn-submit {
+      background-color: purple;  background: #ad5389;
+      background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  background: linear-gradient(to right, #3c1053, #ad5389);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      width: 80%;
+      height: 2.5rem;
+      margin-top: 1rem;
+      letter-spacing: 0.2rem;
+      cursor: pointer;
+      text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+      font-family: var(--font-action);
+      font-size: 1rem;
+      color: #eee;
+      border-radius: 0.5rem;
+      border: none;
+    }
+
+    .btn-submit:hover{
+      filter: brightness(115%);
+      transition: 1s;
+      cursor: pointer;
+    }
+    
+    .preenchido{
+        pointer-events: none;
     }
