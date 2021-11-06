@@ -13,6 +13,10 @@
  --font-action: "Mulish", serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .menuburguer{
   width: 2rem;
   height: 2rem;
@@ -23,7 +27,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  cursor: pointer
+  cursor: pointer;
+  z-index: 160;
 }
 
 .show-menu .menuburguer{
@@ -181,6 +186,7 @@ header{
     top: 0;
     right: -20rem;
     transition: 1s;
+    z-index: 150;
   }
 
   .show-menu .sidebar{
@@ -202,7 +208,7 @@ header{
   .menu-link{
     font-family: var(--font-action);
     font-size: 2rem;
-    color: #555
+    color: #555;
   }
 
   .menu-link:hover{
@@ -493,11 +499,11 @@ header{
       transition: all 0.3s;
     }
     
-    .field:focus ~ label {
+    .field:focus ~ label, .field:focus ~ label, .field:valid ~ label{
       top: 0;
       font-size: 0.7rem;
     }
-    
+
     .field:focus {
       border-bottom: 1px solid;
     }
