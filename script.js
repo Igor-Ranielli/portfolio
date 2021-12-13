@@ -19,9 +19,9 @@ function refreshPrice (){
   const deadline = document.querySelector("#deadline").value
 
   let price = amount * 100;
-  if (needJS) price *= 1.1
+  if (needJS) price *= 1.5
   if (includeLayout) price += 500
-  let urgencyRate = 1 - deadline*0.1;
-    price *= 1 + (urgencyRate)
+  let urgencyRate = 1 - deadline/4;
+    price *= 2 + (urgencyRate)
   document.querySelector("#price").innerHTML = `R$ ${price.toFixed (2)}`
 }

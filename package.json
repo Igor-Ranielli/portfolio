@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio By Igor Ranielli",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igor-Ranielli/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Igor-Ranielli/portfolio/issues"
+  },
+  "homepage": "https://github.com/Igor-Ranielli/portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

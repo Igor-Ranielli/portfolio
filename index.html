@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -54,7 +55,7 @@
     <div class="section-header">
       <h1>Skills</h1>
     </div>
-    <div class="skills">
+    <div class="skills d-md-grid d-block">
       <div class="skill">
         <div class="skill-header">
           <i class="fab fa-html5"></i>
@@ -118,31 +119,31 @@
   <h1>Projects</h1>
 </div>
 <div class="projects">
-  <div class="card">
-    <div class="card-img-wrapper"><img src="images/proj1.jpg" alt="Image of Project ToDo"></div>
+  <div class="card border-0">
+    <div class="card-img-wrapper d-flex"><img src="images/proj1.jpg" alt="Image of Project ToDo"></div>
     <div class="card-info">
       <h2>ToDo1</h2>
       <h3>Javascript</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis qui alias ex similique saepe velit id, praesentium beatae aut numquam sit perferendis cupiditate quod minus quam odio pariatur corporis fuga.</p>
-      <button class="btn">Read More</button>
+      <button class="button">Read More</button>
     </div>
     </div>
-    <div class="card">
+    <div class="card border-0">
       <div class="card-img-wrapper"><img src="images/proj2.jpg" alt="Image of Project ToDo2"></div>
       <div class="card-info">
         <h2>ToDo2</h2>
         <h3>HTML, CSS</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis qui alias ex similique saepe velit id, praesentium beatae aut numquam sit perferendis cupiditate quod minus quam odio pariatur corporis fuga.</p>
-        <button class="btn">Read More</button>
+        <button class="button">Read More</button>
       </div>
     </div>
-    <div class="card">
+    <div class="card border-0">
       <div class="card-img-wrapper"><img src="images/proj3.jpg" alt="Image of Project ToDo3"></div>
       <div class="card-info">
         <h2>ToDo3</h2>
         <h3>HTML</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis qui alias ex similique saepe velit id, praesentium beatae aut numquam sit perferendis cupiditate quod minus quam odio pariatur corporis fuga.</p>
-        <button class="btn">Read More</button>
+        <button class="button">Read More</button>
       </div>
     </div>
   </div>
@@ -175,31 +176,31 @@
 </section>
 
 <section class="section-budget" id="budget">
-<div class="budget-wrapper">
-  <h1>Make a budget</h1>
-  <form>
-    <label for="amount">Number of Pages</label>
-    <input type="number" min="1" name="amount" id="amount">
-    <label for="js">Need a script js</label>
-    <input type="checkbox" name="js" id="js">
-    <label>Layout</label>
-    <div class="group-layout">
-      <div>
-        <input type="radio" name="layout" id="layout-yes">
-        <label for="layout-yes">Need a layout</label>
+  <div class="budget-wrapper">
+    <h1>Make a budget</h1>
+    <form>
+      <label for="amount">Number of Pages</label>
+      <input type="number" min="1" name="amount" id="amount">
+      <label for="js">Need a script js</label>
+      <input type="checkbox" name="js" id="js">
+      <label>Layout</label>
+      <div class="group-layout">
+        <div>
+          <input type="radio" name="layout" id="layout-yes">
+          <label for="layout-yes">Need a layout</label>
+        </div>
+        <div>
+          <input type="radio" name="layout" id="layout-no">
+          <label for="layout-no">Already have a layout</label>
+        </div>
       </div>
-      <div>
-        <input type="radio" name="layout" id="layout-no">
-        <label for="layout-no">Already have a layout</label>
-      </div>
-    </div>
-    <label for="deadline">Deadline</label>
-    <input type="range" name="deadline" id="deadline" min="1" max="10">
-    <label id="price">R$ 0,00</label>
-    <button class="btn-budget" type="submit">Submit</button>
-  </form>
-</div>
-</section>
+      <label for="deadline">Deadline</label>
+      <input type="range" name="deadline" id="deadline" min="1" max="10">
+      <label id="price">R$ 0,00</label>
+      <button class="btn-budget" type="submit">Submit</button>
+    </form>
+  </div>
+  </section>
 
 <footer>
   <div class="footer-content">
@@ -212,6 +213,7 @@
         <li><a href="https://github.com/igor-ranielli" target="_blank"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.linkedin.com/in/igor-siqueira-4a18aa183" target="_blank"><i class="fab fa-linkedin"></i></a></li>
       </ul>
+     
     </div>
   </div>
 </footer>
@@ -221,5 +223,6 @@
 
   </div>
 </body>
+<script src="node_modules/bootstrap/dist/css/bootstrap.min.js"></script>
 <script src="script.js"></script>
 </html>
