@@ -1,3 +1,14 @@
+var loading;
+  
+  function myFunction() {
+    loading = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "";
+  }
+
 document.querySelector(".menuburguer").addEventListener("click", () => {
   document.querySelector(".container").classList.toggle("show-menu");});
 
@@ -8,8 +19,9 @@ document.querySelector("#layout-yes").addEventListener("change", refreshPrice)
 document.querySelector("#layout-no").addEventListener("change", refreshPrice)
 document.querySelector("#deadline").addEventListener("change", function () {
   const deadline = document.querySelector("#deadline").value
-  document.querySelector("Label[for=deadline]").innerHTML = `Deadline: ${deadline} weeks`
+  document.querySelector("Label[for=deadline]").innerHTML = `Deadline: ${deadline} week(s)`
   refreshPrice()
+
 })
 
 function refreshPrice (){
